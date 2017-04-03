@@ -10,6 +10,8 @@ html
 
     body
         .top-part
+            .header-shadow
+                img(src="images/header-shadow.png", alt="")
             header
                 .logo
                     img(src="images/logo.png", alt="")
@@ -22,10 +24,20 @@ html
                         option(value="other")
                             |other
                 
-                    .my-select
-                        select
-                            option(value="about")
-                                |О проекте
-                            option(value="other")
-                                |other
-                  
+                    
+                    select
+                        option(value="about")
+                            |О проекте
+                        option(value="other")
+                            |other
+                    .lang
+                        .rus
+                            |рус
+                        .kaz
+                            |каз
+
+                    .login
+                        a(href="#" class="enter")
+                            |Вход
+                        a(href="#" class="registry")
+                            |Регистрация

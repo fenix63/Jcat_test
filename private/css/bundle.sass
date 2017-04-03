@@ -4,6 +4,9 @@
 @font-face
     font-family: AvenirNext-Regular
     src: url(../fonts/AvenirNext-Regular.ttf)
+@font-face
+    font-family: AvenirNext-DemiBold
+    src: url(../fonts/AvenirNext-DemiBold.ttf)
 
 body
     margin: 0
@@ -13,10 +16,13 @@ body
     background-color: #f4f0ec
     background-image: url(../images/bg.png)
 
+    .header-shadow
+        position: absolute
+
     header
         height: 150px
         padding-top: 40px
-        margin-left: 220px
+        margin-left: 221px
         padding-left: 10px
 
         
@@ -30,19 +36,57 @@ body
         .menu
             float: left
 
-            .my-select
-                background: url(../images/dropdown-arrow.png) no-repeat
+            
 
-                select
-                    font-family: AvenirNext-Medium
-                    font-size: 18px
-                    background-color: transparent
-                    background: transparent
-                    border: none
-                    color: #fffefe
-                    margin-left: 209px
-                    margin-top: 15px
-                    
+            select
+                font-family: AvenirNext-Medium
+                font-size: 18px
+                background-color: transparent
+                background: transparent
+                border: none
+                color: #fffefe
+                margin-left: 395px
+                position: relative
+                bottom: 53px
                 
-                    &:nth-child(2)
-                        margin-left: 41px
+                
+            
+                &:nth-child(2)
+                    margin-left: 32px
+            .lang
+                float: right
+                font-family: AvenirNext-DemiBold
+                font-size: 11px
+                text-transform: uppercase
+                color: #fffefe
+                margin-right: 229px
+                letter-spacing: 1px
+                position: relative
+                bottom: 91px
+
+                .rus,.kaz
+                    float: left
+                .kaz
+                    margin-left: 20px
+
+            .login
+                float: right
+                border: 1px solid
+                border-color: rgba(255,255,255,0.25)
+                margin-top: 6px
+                border-radius: 44px
+                margin-left: 40px
+                margin-right: 206px
+                position: relative
+                bottom: 94px
+                padding: 8px 24px 9px 22px
+                font-family: AvenirNext-Medium
+                font-size: 18px
+
+                a
+                    text-decoration: none
+
+                .enter,.registry
+                    color: #fffefe
+                .enter
+                    padding-right: 37px
