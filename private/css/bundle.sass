@@ -27,6 +27,9 @@ body
 
         
         .logo
+            a
+                cursor: pointer
+
             float: left
             .center-testing
                 font-family: AvenirNext-Regular
@@ -41,18 +44,23 @@ body
             select
                 font-family: AvenirNext-Medium
                 font-size: 18px
-                background-color: transparent
                 background: transparent
                 border: none
                 color: #fffefe
                 margin-left: 395px
                 position: relative
+                display: inline-block
                 bottom: 53px
-                
-                
-            
+                outline: 0
+                -webkit-padding-end: 2px;
+                -webkit-padding-after: 4px;
+
                 &:nth-child(2)
-                    margin-left: 41px
+                    margin-left: 39px
+                &:hover
+                    cursor: pointer
+                    transition: ease-in-out 0.25s
+                    opacity: 0.7
             .lang
                 float: right
                 font-family: AvenirNext-DemiBold
@@ -66,6 +74,12 @@ body
 
                 .rus,.kaz
                     float: left
+                    a
+                        color: #fffefe
+                        text-decoration: none
+                        &:hover
+                            transition: ease-in-out 0.25s
+                            opacity: 0.7
                 .kaz
                     margin-left: 20px
 
@@ -73,23 +87,27 @@ body
                 float: right
                 border: 1px solid
                 border-color: rgba(255,255,255,0.25)
-                margin-top: 6px
+                margin-top: 3px
                 border-radius: 44px
                 margin-left: 40px
                 margin-right: 206px
                 position: relative
                 bottom: 94px
-                padding: 8px 24px 9px 21px
+                padding: 8px 24px 9px 22px
                 font-family: AvenirNext-Medium
                 font-size: 18px
 
                 a
                     text-decoration: none
 
+                    &:hover
+                        transition: ease-in-out 0.25s
+                        opacity: 0.7
+
                 .enter,.registry
                     color: #fffefe
                 .enter
-                    padding-right: 20px
+                    padding-right: 19px
                     margin-right: 17px
                     border-right: 1px solid
                     border-color: rgba(255,255,255, 0.25)
@@ -123,6 +141,10 @@ body
             padding: 17px 48px 17px 48px
             outline: 0
             cursor: pointer
+
+            &:hover
+                transition: ease-in-out 0.25s
+                opacity: 0.7
 .pass-ent
     height: 820px
     background: #faf8f6
@@ -178,6 +200,11 @@ body
                 box-shadow: 0 0 50px rgba(40,86, 179, 0.2)
                 outline: 0
                 cursor: pointer
+
+                &:hover
+                    transition: ease-in-out 0.25s
+                    opacity: 0.7
+
         .partner
             display: inline-block
             font-family: AvenirNext-Medium
@@ -186,23 +213,29 @@ body
             border-radius: 5px
             text-transform: uppercase
             color: #b2b2b2
-            padding: 27px 12px 30px 32px
+            padding: 26px 67px 26px 32px
             margin-left: 2px
             margin-top: 56px
             letter-spacing: 0.1em
-            line-height: 1.7
+            line-height: 1.8
 footer
     width: 942px
     margin: 0 auto
     margin-top: 52px
+    padding-bottom: 52px
     p
         font-family: AvenirNext-Medium
         font-size: 14px
         color: #b2b2b2
 
+        span
+            a
+                &:hover
+                    transition: ease-in-out 0.25s
+
         &:last-child
             margin-top: -19px
     span
         color: #2856b3
-        
+
         
